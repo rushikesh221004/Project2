@@ -27,8 +27,10 @@
 }
 
 #left h1 {
-  font-size: 120px;
-  line-height: 130px;
+  /* font-size: 120px; */
+  font-size: 6.4vw;
+  /* line-height: 130px; */
+  line-height: 6.8vw;
   font-weight: 500;
 }
 
@@ -74,14 +76,14 @@
 
 #left h2 {
   margin-top: 50px;
-  font-size: 25px;
+  font-size: 1.3vw;
   margin-bottom: 14px;
 }
 
 #left p {
-  font-size: 17px;
+  font-size: 0.9vw;
   color: #444;
-  line-height: 25px;
+  line-height: 1.3vw;
   width: 65%;
 }
 
@@ -93,32 +95,178 @@
 }
 
 #right-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  width: 100%;
+  /* background-color: red; */
+}
+
+#right-top h4 {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+#right-top h5 i {
+  color: gold;
+}
+
+#right img {
+  width: 100%;
+  height: calc(100% - 64px);
+  object-fit: cover;
+}
+
+#black-gola {
+  height: 180px;
+  width: 180px;
+  background-color: #222222;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  position: absolute;
+  right: -15%;
+  top: 25%;
+}
+
+#black-gola h2 {
+  font-weight: 508;
+}
+
+#rotated {
+  position: absolute;
+  left: -14%;
+  bottom: 3%;
+  rotate: -90deg;
+  transform-origin: 0 0;
+  font-size: 35px;
+}
+
+@media (max-width: 600px) {
+ #main {
+    height: calc(100% - 80px);
+    width: calc(100% - 80px);
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 40px;
+    padding-top: 40px;
+    gap: 60px;
+ }
+
+ #left {
+    height: fit-content;
+    width: 100%;
+    /* background-color: re12 */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 50px;
+    gap: 50px;
+  }
+  
+  #left h1 {
+    /* font-size: 120px; */
+    font-size: 18vw;
+    /* line-height: 130px; */
+    line-height: 18vw;
+    font-weight: 500;
+  }
+  
+  #left #bottom-left {
+    width: 100%;
+    /* background-color: yellow; */
+  }
+  
+  #color {
+    /* background-color: blue; */
+    padding: 8px 9px;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    border-radius: 26px;
+    border: 1px solid gray;
+    gap: 15px;
+  }
+  
+  #color h5 {
+    font-size: 13px;
+    font-weight: 600;
+  }
+  
+  #color div {
+    display: flex;
+    gap: 4px;
+  }
+  
+  #color1 {
+    height: 12px;
+    width: 12px;
+    background-color: #726255;
+    border-radius: 50%;
+  }
+  
+  #color2 {
+    height: 12px;
+    width: 12px;
+    background-color: #373737;
+    border-radius: 50%;
+  }
+  
+  #left h2 {
+    margin-top: 20px;
+    font-size: 4vw;
+    margin-bottom: 10px;
+  }
+  
+  #left p {
+    font-size: 3.5vw;
+    color: #444;
+    line-height: 5vw;
+    width: 100%;
+  }
+
+  #right {
+    height: 60vh;
+    width: 100%;
+    /* background-color: blue; */
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  
+  #right-top {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 60px;
     width: 100%;
     /* background-color: red; */
-}
-
-#right-top h4 {
+  }
+  
+  #right-top h4 {
     font-size: 25px;
     font-weight: 600;
-}
-
-#right-top h5 i {
+  }
+  
+  #right-top h5 i {
     color: gold;
-}
-
-#right img {
+  }
+  
+  #right img {
     width: 100%;
     height: calc(100% - 64px);
     object-fit: cover;
-}
-
-#black-gola {
-    height: 180px;
-    width: 180px;
+    border-radius: 5px;
+  }
+  
+  #black-gola {
+    height: 100px;
+    width: 100px;
     background-color: #222222;
     color: white;
     display: flex;
@@ -127,18 +275,22 @@
     border-radius: 50%;
     position: absolute;
     right: -15%;
-    top: 25%;
-}
-
-#black-gola h2 {
+    top: -10%;
+  }
+  
+  #black-gola h2 {
     font-weight: 508;
-}
-
-#rotated {
+    font-size: 15px;
+  }
+  
+  #rotated {
     position: absolute;
-    left: -14%;
-    bottom: 3%;
-    rotate: -90deg;
+    left: 0;
+    top: -8%;
+    rotate: 0deg;
     transform-origin: 0 0;
-    font-size: 35px;
+    font-size: 26px;
+    font-weight: 550;
+  }
+  
 }
