@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+#main {
+  width: calc(100vw - 180px);
+  height: calc(100vh - 150px);
+  padding: 0 90px;
+  padding-top: 150px;
+  /* background-color: blue; */
+  display: flex;
+  align-items: flex-end;
+  gap: 70px;
+  /* justify-content: space-between; */
+}
+
+#left {
+  height: 100%;
+  width: 45%;
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 50px;
+}
+
+#left h1 {
+  font-size: 120px;
+  line-height: 130px;
+  font-weight: 500;
+}
+
+#left #bottom-left {
+  width: 100%;
+  /* background-color: yellow; */
+}
+
+#color {
+  /* background-color: blue; */
+  padding: 9px 15px;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  border-radius: 26px;
+  border: 1px solid gray;
+  gap: 15px;
+}
+
+#color h5 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+#color div {
+  display: flex;
+  gap: 4px;
+}
+
+#color1 {
+  height: 18px;
+  width: 18px;
+  background-color: #726255;
+  border-radius: 50%;
+}
+
+#color2 {
+  height: 18px;
+  width: 18px;
+  background-color: #373737;
+  border-radius: 50%;
+}
+
+#left h2 {
+  margin-top: 50px;
+  font-size: 25px;
+  margin-bottom: 14px;
+}
+
+#left p {
+  font-size: 17px;
+  color: #444;
+  line-height: 25px;
+  width: 65%;
+}
+
+#right {
+  height: 95%;
+  width: 33%;
+  /* background-color: blue; */
+  position: relative;
+}
+
+#right-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    /* background-color: red; */
+}
+
+#right-top h4 {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+#right-top h5 i {
+    color: gold;
+}
+
+#right img {
+    width: 100%;
+    height: calc(100% - 64px);
+    object-fit: cover;
+}
+
+#black-gola {
+    height: 180px;
+    width: 180px;
+    background-color: #222222;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    position: absolute;
+    right: -15%;
+    top: 25%;
+}
+
+#black-gola h2 {
+    font-weight: 508;
+}
+
+#rotated {
+    position: absolute;
+    left: -14%;
+    bottom: 3%;
+    rotate: -90deg;
+    transform-origin: 0 0;
+    font-size: 35px;
+}
